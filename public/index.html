@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدارس أساس الوطنية | Asas National Schools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.png" alt="شعار مدارس أساس الوطنية" class="logo"></a>
+            <h2>
+                <span class="lang-ar">مدارس أساس الوطنية</span>
+                <span class="lang-en">Asas National Schools</span>
+            </h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home"><span class="lang-ar">الرئيسية</span><span class="lang-en">Home</span></a></li>
+            <li><a href="index.html#about"><span class="lang-ar">من نحن</span><span class="lang-en">About Us</span></a></li>
+            <li><a href="index.html#admission"><span class="lang-ar">القبول والتسجيل</span><span class="lang-en">Admission</span></a></li>
+            <li><a href="rules.html"><span class="lang-ar">النظام الداخلي</span><span class="lang-en">Rules</span></a></li>
+            <li><a href="index.html#contact"><span class="lang-ar">تواصل معنا</span><span class="lang-en">Contact</span></a></li>
+        </ul>
+        <div class="controls">
+            <button id="theme-toggle" class="control-btn"><i class="fas fa-moon"></i></button>
+            <button id="lang-toggle" class="control-btn">EN</button>
+        </div>
+    </nav>
+
+    <!-- الهيدر (فيديو النشيد) -->
+    <header id="home" class="hero-section">
+        <video autoplay muted loop playsinline id="anthem-video" class="hero-video">
+            <source src="video/anthem.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-overlay">
+            <h1>
+                <span class="lang-ar">مدارس أساس الوطنية</span>
+                <span class="lang-en">Asas National Schools</span>
+            </h1>
+            <p>
+                <span class="lang-ar">"الـحــــرف أصــل الأثـــر"</span>
+                <span class="lang-en">The letter is the origin of the impact</span>
+            </p>
+        </div>
+            
+        <div class="custom-video-controls">
+            <div class="video-buttons">
+                <button id="play-pause-btn" class="action-btn">
+                    <i class="fas fa-pause"></i> 
+                    <span class="lang-ar">إيقاف</span><span class="lang-en">Pause</span>
+                </button>
+                <button id="unmute-btn" class="action-btn">
+                    <i class="fas fa-volume-mute"></i> 
+                    <span class="lang-ar">الصوت</span><span class="lang-en">Sound</span>
+                </button>
+            </div>
+            <input type="range" id="seek-bar" value="0" step="0.1" min="0" max="100">
+        </div>
+    </header>
+
+    <!-- قسم من نحن (يضم التعريف، الأهداف، والهيكل التنظيمي) -->
+    <section id="about" class="section">
+        <div class="container">
+            
+            <h2 class="section-title">
+                <span class="lang-ar">من نحن</span>
+                <span class="lang-en">About Us</span>
+            </h2>
+
+            <!-- 1. الإطار التعريفي -->
+            <div class="about-frame" style="margin-bottom: 50px;">
+                <p>
+                    <span class="lang-ar">نحن في أساس الوطنية مؤسسة تعليمية في مدينة حمص، تقودها نخبة من الخبراء في مجال التربية والتعليم، نؤمن بأن الحرف هو نقطة الانطلاق لبناء وعى الإنسان وصناعة أثره.</span>
+                    <span class="lang-en">We at Asas National are an educational institution in Homs, led by a group of experts in the field of education. We believe that the letter is the starting point for building human awareness and creating an impact.</span>
+                </p>
+            </div>
+
+            <!-- 2. الأهداف العامة -->
+            <h3 class="subsection-title">
+                <span class="lang-ar">أهدافنا العامة</span>
+                <span class="lang-en">Our General Objectives</span>
+            </h3>
+            <div class="cards-container" style="margin-bottom: 60px;">
+                <div class="card">
+                    <ul class="values-list">
+                        <li><span class="lang-ar">تحقيق تعليم أكاديمي متميز وفق معايير حديثة.</span><span class="lang-en">Achieve outstanding academic education according to modern standards.</span></li>
+                        <li><span class="lang-ar">تنمية شخصية الطالب فكريا وسلوكيا وقيميًا.</span><span class="lang-en">Develop the student's personality intellectually, behaviorally, and in terms of values.</span></li>
+                        <li><span class="lang-ar">تعزيز الهوية الثقافية والوعي الديني المعتدل.</span><span class="lang-en">Enhance cultural identity and moderate religious awareness.</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <ul class="values-list">
+                        <li><span class="lang-ar">إتقان اللغتين العربية والإنجليزية.</span><span class="lang-en">Master both Arabic and English languages.</span></li>
+                        <li><span class="lang-ar">دعم الأنشطة اللامنهجية واكتشاف المواهب.</span><span class="lang-en">Support extracurricular activities and discover talents.</span></li>
+                        <li><span class="lang-ar">تحقيق بيئة تعليمية دامجة لأصحاب الهمم.</span><span class="lang-en">Achieve an inclusive educational environment for people of determination.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 3. الهيكل التنظيمي -->
+            <h3 class="subsection-title">
+                <span class="lang-ar">الهيكل التنظيمي</span>
+                <span class="lang-en">Organizational Structure</span>
+            </h3>
+            <div class="org-chart">
+                <div class="org-level level-1"><div class="org-box"><span class="lang-ar">مجلس الإدارة</span><span class="lang-en">Board of Directors</span></div></div>
+                <div class="org-line"></div>
+                <div class="org-level level-2"><div class="org-box"><span class="lang-ar">المدير التنفيذي (CEO)</span><span class="lang-en">Executive Director (CEO)</span></div></div>
+                <div class="org-line"></div>
+                <div class="org-level level-3"><div class="org-box"><span class="lang-ar">مدير المدرسة (Principal)</span><span class="lang-en">School Principal</span></div></div>
+                <div class="org-line-horizontal"></div>
+                <div class="org-level level-4">
+                    <div class="org-box small-box"><span class="lang-ar">الشؤون الأكاديمية</span><span class="lang-en">Academic Affairs</span></div>
+                    <div class="org-box small-box"><span class="lang-ar">الشؤون الإدارية</span><span class="lang-en">Administrative Affairs</span></div>
+                    <div class="org-box small-box"><span class="lang-ar">الشؤون المالية</span><span class="lang-en">Financial Affairs</span></div>
+                    <div class="org-box small-box"><span class="lang-ar">الإرشاد الطلابي</span><span class="lang-en">Student Counseling</span></div>
+                    <div class="org-box small-box"><span class="lang-ar">الأنشطة</span><span class="lang-en">Activities</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الرؤية والرسالة والقيم -->
+    <section id="vision" class="section bg-light">
+        <div class="container cards-container">
+            <div class="card">
+                <h3><span class="lang-ar">الرؤية</span><span class="lang-en">Vision</span></h3>
+                <p><span class="lang-ar">الحرف أصل الأثر.</span><span class="lang-en">The letter is the origin of the impact.</span></p>
+            </div>
+            <div class="card">
+                <h3><span class="lang-ar">الرسالة</span><span class="lang-en">Mission</span></h3>
+                <p><span class="lang-ar">في مدارس أساس الوطنية، تقدم تعليمًا نوعيًا يبدأ من الحرف، ويُشكل الوعي، ويُرسخ القيم، ضمن بيئة محفزة وكوادر مؤهلة، لتسهم في إعداد إنسان متوازن يصنع أثرًا مستداما في مجتمعه والعالم.</span><span class="lang-en">At Asas National Schools, we provide quality education that begins with the letter, shapes awareness, and establishes values within a stimulating environment and qualified staff, contributing to the preparation of a balanced human being who creates a sustainable impact in their community and the world.</span></p>
+            </div>
+            <div class="card">
+                <h3><span class="lang-ar">القيم</span><span class="lang-en">Values</span></h3>
+                <ul class="values-list">
+                    <li><span class="lang-ar">الإتقان</span><span class="lang-en">Mastery</span></li>
+                    <li><span class="lang-ar">الاحترام</span><span class="lang-en">Respect</span></li>
+                    <li><span class="lang-ar">المسؤولية</span><span class="lang-en">Responsibility</span></li>
+                    <li><span class="lang-ar">الإبداع</span><span class="lang-en">Creativity</span></li>
+                    <li><span class="lang-ar">الانتماء</span><span class="lang-en">Belonging</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم القبول والتسجيل -->
+    <section id="admission" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-ar">نظام القبول والتسجيل</span>
+                <span class="lang-en">Admission & Registration</span>
+            </h2>
+            
+            <div class="admission-wrapper">
+                <!-- الخطوات -->
+                <div class="admission-steps">
+                    <h3><span class="lang-ar">خطوات التسجيل</span><span class="lang-en">Registration Steps</span></h3>
+                    <div class="step"><div class="step-num">1</div><p><span class="lang-ar">تعبئة استمارة التسجيل</span><span class="lang-en">Fill registration form</span></p></div>
+                    <div class="step"><div class="step-num">2</div><p><span class="lang-ar">تقديم الأوراق</span><span class="lang-en">Submit documents</span></p></div>
+                    <div class="step"><div class="step-num">3</div><p><span class="lang-ar">مقابلة أو اختبار تحديد مستوى</span><span class="lang-en">Interview/Placement test</span></p></div>
+                    <div class="step"><div class="step-num">4</div><p><span class="lang-ar">دفع الرسوم</span><span class="lang-en">Pay fees</span></p></div>
+                    <div class="step"><div class="step-num">5</div><p><span class="lang-ar">تثبيت القبول</span><span class="lang-en">Confirm admission</span></p></div>
+                </div>
+
+                <!-- الوثائق المطلوبة -->
+                <div class="admission-docs">
+                    <h3><span class="lang-ar">الوثائق المطلوبة</span><span class="lang-en">Required Documents</span></h3>
+                    <ul class="rule-list">
+                        <li><span class="lang-ar">شهادة ميلاد</span><span class="lang-en">Birth certificate</span></li>
+                        <li><span class="lang-ar">صور شخصية</span><span class="lang-en">Personal photos</span></li>
+                        <li><span class="lang-ar">تقارير مدرسية سابقة</span><span class="lang-en">Previous school reports</span></li>
+                        <li><span class="lang-ar">ملف صحي</span><span class="lang-en">Health file</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2><span class="lang-ar">تواصل معنا</span><span class="lang-en">Contact Us</span></h2>
+            <div class="contact-info">
+                <a href="https://www.facebook.com/profile.php?id=61573630894775" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i> <span class="lang-ar">فيسبوك</span><span class="lang-en">Facebook</span></a>
+                <a href="https://www.instagram.com/asas.national.schools?igsh=emo5MG5reWxoMTVp" target="_blank" class="social-link"><i class="fab fa-instagram"></i> <span class="lang-ar">إنستغرام</span><span class="lang-en">Instagram</span></a>
+            </div>
+            <div class="phones">
+                <p><i class="fas fa-phone"></i> 0934066670</p>
+                <p><i class="fab fa-whatsapp"></i> 0994066670 <span class="lang-ar">(اتصال + واتساب)</span><span class="lang-en">(Call & WhatsApp)</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
